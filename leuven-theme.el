@@ -175,9 +175,9 @@ more...")
    `(whitespace-trailing ((,class ,trailing)))
 
    ;; Mode line faces.
-   `(mode-line ((,class (:box (:line-width 1 :color "#1A2F54") :foreground "#85CEEB" :background "#335EA8"))))
-   `(mode-line-inactive ((,class (:box (:line-width 1 :color "#4E4E4C") :foreground "#F0F0EF" :background "#9B9C97"))))
-   `(mode-line-buffer-id ((,class (:weight bold :foreground "white"))))
+   `(mode-line ((,class (:box (:line-width 1 :color "#77B3E5") :foreground "#406596" :background "#B5D5F5"))))
+   `(mode-line-inactive ((,class (:box (:line-width 1 :color "gray") :foreground "#666666" :background "#E4E4E4"))))
+   `(mode-line-buffer-id ((,class (:weight bold :foreground "#276DA8"))))
    `(mode-line-emphasis ((,class (:weight bold :foreground "white"))))
    `(mode-line-highlight ((,class (:foreground "yellow"))))
 
