@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170919.1149
+;; Version: 20180510.1539
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -144,7 +144,7 @@ more...")
       (xml-attribute '(:foreground "#F36335"))
       (xml-tag '(:foreground "#AE1B9A"))
       (highlight-current-tag '(:background "#E8E8FF")) ; #EEF3F6 or #FFEB26
-  )
+      )
 
   (custom-theme-set-faces
    'leuven
@@ -187,7 +187,7 @@ more...")
    `(escape-glyph ((,class (:foreground "#008ED1"))))
    `(error ((,class (:foreground "red"))))
    `(warning ((,class (:weight bold :foreground "orange"))))
-   `(success ((,class (:foreground "green"))))
+   `(success ((,class (:foreground "ForestGreen"))))
 
    ;; Font lock faces.
    `(font-lock-builtin-face ((,class (:foreground "#006FE0"))))
