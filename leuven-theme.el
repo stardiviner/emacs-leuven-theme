@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20180823.2048
+;; Version: 20181024.1450
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -84,8 +84,8 @@ more...")
       ;; Leuven generic colors.
       (cancel '(:slant italic :strike-through t :foreground "#A9A9A9"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
-      (code-block '(:foreground "#000088" :background "#FFFFE0"))
-      (code-inline '(:foreground "#006400" :background "#E2E9CB"))
+      (code-block '(:inherit fixed-pitch :foreground "#000088" :background "#FFFFE0"))
+      (code-inline '(:inherit fixed-pitch :foreground "#006400" :background "#E2E9CB"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (completion-selected-candidate '(:weight bold :foreground "white" :background "#0052A4"))
       (completion-other-candidates '(:weight bold :foreground "black" :background "#EBF4FE"))
@@ -792,7 +792,7 @@ more...")
    `(org-time-grid ((,class (:foreground "#CFCFCF"))))
    `(org-todo ((,class (:weight bold :box (:line-width 1 :color "#D8ABA7") :foreground "#D8ABA7" :background "#FFE6E4"))))
    `(org-upcoming-deadline ((,class (:weight bold :background "light pink"))))
-   `(org-verbatim ((,class (:foreground "#0066CC" :background "#F7FDFF"))))
+   `(org-verbatim ((,class (:inherit fixed-pitch :foreground "#0066CC" :background "#F7FDFF"))))
    `(org-verse ((,class (:slant italic :foreground "dim gray" :background "#EEEEEE"))))
    `(org-warning ((,class (:weight bold :foreground "black" :background "#CCE7FF"))))
    `(outline-1 ((,class ,ol1)))
