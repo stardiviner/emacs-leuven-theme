@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20181024.1450
+;; Version: 20181210.1306
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -740,7 +740,7 @@ more...")
    `(org-archived ((,class (:foreground "gray70"))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
    `(org-block ((,class ,code-block)))
-   `(org-block-background ((,class (:background "#FFFFE0")))) ;; :inherit fixed-pitch))))
+   `(org-block-background ((,class (:inherit fixed-pitch :background "#FFFFE0"))))
    `(org-block-begin-line ((,class (:foreground "#555555" :background "#E2E1D5"))))
    `(org-block-end-line ((,class (:foreground "#555555" :background "#E2E1D5"))))
    `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#123555" :background "#A3A3A3"))))
@@ -776,7 +776,7 @@ more...")
    `(org-list-dt ((,class (:weight bold :foreground "#335EA8"))))
    `(org-macro ((,class (:weight bold :foreground "#EDB802"))))
    `(org-meta-line ((,class (:slant normal :foreground "#008ED1" :background "#EAEAFF"))))
-   `(org-mode-line-clock ((,class (:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#FFA335"))))
+   `(org-mode-line-clock ((,class (:foreground "#00BFFF" :weight bold))))
    `(org-mode-line-clock-overrun ((,class (:weight bold :box (:line-width 1 :color "#335EA8") :foreground "white" :background "#FF4040"))))
    `(org-number-of-items ((,class (:weight bold :foreground "white" :background "#79BA79"))))
    `(org-property-value ((,class (:foreground "#00A000"))))
@@ -786,15 +786,15 @@ more...")
    `(org-scheduled-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
-   `(org-table ((,class (:foreground "dark green" :background "#EAFFEA")))) ;; :inherit fixed-pitch))))
+   `(org-table ((,class (:inherit fixed-pitch :foreground "dark green" :background "#EAFFEA"))))
    `(org-tag ((,class (:weight normal :slant italic :foreground "#9A9FA4" :background "white"))))
    `(org-target ((,class (:foreground "#4682B4" :weight bold))))
    `(org-time-grid ((,class (:foreground "#CFCFCF"))))
    `(org-todo ((,class (:weight bold :box (:line-width 1 :color "#D8ABA7") :foreground "#D8ABA7" :background "#FFE6E4"))))
-   `(org-upcoming-deadline ((,class (:weight bold :background "light pink"))))
+   `(org-upcoming-deadline ((,class (:weight bold :foreground "#222222" :background "palevioletred1"))))
    `(org-verbatim ((,class (:inherit fixed-pitch :foreground "#0066CC" :background "#F7FDFF"))))
    `(org-verse ((,class (:slant italic :foreground "dim gray" :background "#EEEEEE"))))
-   `(org-warning ((,class (:weight bold :foreground "black" :background "#CCE7FF"))))
+   `(org-warning ((,class (:weight bold :foreground "#444444" :background "coral"))))
    `(outline-1 ((,class ,ol1)))
    `(outline-2 ((,class ,ol2)))
    `(outline-3 ((,class ,ol3)))
