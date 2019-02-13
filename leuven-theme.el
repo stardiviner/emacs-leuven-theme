@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20190103.1432
+;; Version: 20190213.1636
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -370,27 +370,33 @@ more...")
    `(bmkp-light-non-autonamed ((,class (:background "#BFFFFE"))))
    `(browse-kill-ring-separator-face ((,class (:foreground "red"))))
    `(calendar-month-header ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
-   `(calendar-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
+   `(calendar-today ((,class (:inherit highlight
+                                       :foreground "#4F4A3D" :background "#FFFFCC"
+                                       :weight bold
+                                       :box (:color "dark gray" :line-width -1)))))
    `(calendar-weekday-header ((,class (:weight bold :foreground "#1662AF"))))
    `(calendar-weekend-header ((,class (:weight bold :foreground "#4E4E4E"))))
    `(cfw:face-annotation ((,class (:foreground "green" :background "red"))))
-   `(cfw:face-day-title ((,class (:foreground "#C9C9C9"))))
+   `(cfw:face-day-title ((,class (:foreground "dim gray"))))
    `(cfw:face-default-content ((,class (:foreground "#2952A3"))))
-   `(cfw:face-default-day ((,class (:weight bold))))
-   `(cfw:face-disable ((,class (:foreground "DarkGray"))))
-   `(cfw:face-grid ((,class (:foreground "#DDDDDD"))))
+   `(cfw:face-default-day ((,class (:weight bold :foreground "dark gray"))))
+   `(cfw:face-disable ((,class (:foreground "light gray"))))
+   `(cfw:face-grid ((,class (:foreground "#888888"))))
    `(cfw:face-header ((,class (:foreground "#1662AF" :background "white" :weight bold))))
-   `(cfw:face-holiday ((,class (:foreground "#777777" :background "#E4EBFE"))))
-   `(cfw:face-periods ((,class (:foreground "white" :background "#668CD9" :slant italic))))
-   `(cfw:face-saturday ((,class (:foreground "#4E4E4E" :background "white" :weight bold))))
-   `(cfw:face-select ((,class (:foreground "#4A95EB" :background "#EDF1FA"))))
-   `(cfw:face-sunday ((,class (:foreground "#4E4E4E" :background "white" :weight bold))))
+   `(cfw:face-holiday ((,class (:foreground "dodger blue" :background "#E4EBFE"))))
+   `(cfw:face-periods ((,class (:foreground "cyan" :slant italic))))
+   `(cfw:face-saturday ((,class (:foreground "orange red" :background "white" :weight bold))))
+   `(cfw:face-sunday ((,class (:foreground "orange red" :background "white" :weight bold))))
+   `(cfw:face-select ((,class (:foreground "white" :background "deep pink"))))
    `(cfw:face-title ((,class (:height 2.0 :foreground "#676767" :weight bold :inherit variable-pitch))))
-   `(cfw:face-today ((,class (:foreground "#4F4A3D" :background "#FFFFCC"))))
-   `(cfw:face-today-title ((,class (:foreground "white" :background "#1766B1"))))
-   `(cfw:face-toolbar ((,class (:background "white"))))
-   `(cfw:face-toolbar-button-off ((,class (:foreground "#CFCFCF" :background "white"))))
-   `(cfw:face-toolbar-button-on ((,class (:foreground "#5E5E5E" :background "#F6F6F6"))))
+   `(cfw:face-today ((,class (:foreground "#4F4A3D" :background "gainsboro"))))
+   `(cfw:face-today-title ((,class (:foreground "red" :background "dark gray" :weight bold))))
+   `(cfw:face-toolbar ((,class (:foreground "black"))))
+   `(cfw:face-toolbar-button-off ((,class (:foreground "dark gray" :background "white"
+                                                       :weight normal))))
+   `(cfw:face-toolbar-button-on ((,class (:foreground "black" :background "#F6F6F6"
+                                                      :box (:color "dim gray" :line-width 1)
+                                                      :weight bold))))
    `(change-log-date ((,class (:foreground "purple"))))
    `(change-log-file ((,class (:weight bold :foreground "#4183C4"))))
    `(change-log-list ((,class (:box (:line-width 1) :foreground "cyan3"))))
