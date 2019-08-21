@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20170101.1105
+;; Version: 20190821.0808
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -951,27 +951,28 @@ more...")
    `(yas-field-highlight-face ((,class (:box (:line-width 1 :color "#464646") :foreground "#fffefe" :background "#0a0e0c"))))
    ))
 
-(custom-theme-set-variables 'leuven
+(custom-theme-set-variables
+ 'leuven
 
-  ;; highlight-sexp-mode.
-  '(hl-sexp-background-color "#060404")
+ ;; highlight-sexp-mode.
+ '(hl-sexp-background-color "#060404")
 
-  '(ansi-color-faces-vector
-    [default default default italic underline success warning error])
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
 
-  ;; Colors used in Shell mode.
-  '(ansi-color-names-vector
-    ["#fffefe" "#9d0000" "#006a00" "#0e1b00" "#6845138" "#840086" "#003567" "#494949"])
+ ;; Colors used in Shell mode.
+ '(ansi-color-names-vector
+   ["#fffefe" "#9d0000" "#006a00" "#0e1b00" "#6845138" "#840086" "#003567" "#494949"])
  )
 
-;;;######autoload
+;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
            load-file-name)
   ;; Add theme folder to `custom-theme-load-path' when installing over MELPA.
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-;;;######autoload
+;;;###autoload
 (when (string-match "/etc/themes/$"
                     (file-name-directory (or load-file-name (buffer-file-name))))
   (message "To stay up-to-date, you should better install and use leuven-theme from MELPA.")
