@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20191208.1948
+;; Version: 20191216.1200
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -678,9 +678,9 @@ more...")
    `(magit-diff-hunk-header ((,class ,diff-hunk-header)))
    `(magit-diff-none ((,class ,diff-none)))
    `(magit-diff-base-highlight ((,class (:foreground "orange" :extend t))))
-   `(magit-diff-context-highlight ((,class (:background "#E0E0E0" :extend t))))
-   `(magit-diff-added-highlight ((,class (:foreground "green" :background "#E0E0E0" :extend t))))
-   `(magit-diff-removed-highlight ((,class (:foreground "red2" :background "#E0E0E0" :extend t))))
+   `(magit-diff-context-highlight ((,class (:background "#EAEAEA" :extend t))))
+   `(magit-diff-added-highlight ((,class (:foreground "#00CC00" :background "#E0E0E0" :extend t))))
+   `(magit-diff-removed-highlight ((,class (:foreground "IndianRed2" :background "#E0E0E0" :extend t))))
    `(magit-diff-lines-heading ((,class (:background "orange2" :extend t))))
    `(magit-header ((,class (:foreground "white" :background "#FF4040"))))
    `(magit-item-highlight ((,class (:background "#EAF2F5"))))
