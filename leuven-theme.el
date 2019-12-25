@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20191221.1423
+;; Version: 20191225.1555
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -180,6 +180,15 @@ more...")
    `(mode-line-buffer-id ((,class (:weight bold :foreground "#276DA8"))))
    `(mode-line-emphasis ((,class (:weight bold :foreground "white"))))
    `(mode-line-highlight ((,class (:foreground "yellow"))))
+
+   ;; tab-bar
+   `(tab-bar ((,class (:inherit mode-line-inactive))))
+   `(tab-bar-tab ((,class (:inherit mode-line :weight bold :box (:line-width 1 :style released-button)))))
+   `(tab-bar-tab-inactive ((,class (:inherit mode-line-inactive :box (:line-width 1 :style released-button)))))
+   ;; tab-line
+   `(tab-line ((,class (:inherit mode-line-inactive))))
+   `(tab-line-tab ((,class (:inherit mode-line :box (:line-width 1 :style released-button)))))
+   `(tab-line-tab-inactive ((,class (:inherit mode-line-inactive :box (:line-width 1 :style released-button)))))
 
    ;; Escape and prompt faces.
    `(minibuffer-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
