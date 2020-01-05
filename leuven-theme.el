@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20191228.2250
+;; Version: 20200105.2030
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -1047,6 +1047,14 @@ more...")
    `(mu4e-header-mark-face ((,class (:foreground "white" :background "red" :extend t))))
    `(mu4e-replied-face ((,class (:foreground "black" :background "orange" :extend t))))
    `(mu4e-flagged-face ((,class (:foreground "white" :background "#008800" :extend t))))
+
+   ;; Ivy
+   `(ivy-current-match ((,class (:foreground nil :background "gray85"))))
+   `(ivy-minibuffer-match-highlight ((,class (:background "#9E9E9E"))))
+   `(ivy-minibuffer-match-face-1 ((,class (:underline "forest green"))))
+   `(ivy-minibuffer-match-face-2 ((,class (:overline "dim gray"))))
+   `(ivy-minibuffer-match-face-3 ((,class (:underline "red2"))))
+   `(ivy-minibuffer-match-face-4 ((,class (:overline "orange"))))
    
    ;; `(ztreep-arrow-face ((,class ())))
    ;; `(ztreep-diff-header-face ((,class ())))
