@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200105.2030
+;; Version: 20200108.1302
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -437,16 +437,17 @@ more...")
    `(company-tooltip-common-selection ((,class (:weight normal :foreground "#F9ECCC" :inherit company-tooltip-selection)))) ; Prefix + common part in tooltip (for selection).
    `(company-tooltip-selection ((,class ,completion-selected-candidate))) ; Suffix in tooltip (for selection).
    `(company-tooltip-annotation-selection ((,class (:weight normal :foreground "#F9ECCC")))) ; Annotation (for selection).
-
    `(company-tooltip-common ((,class (:weight normal :foreground "#B000B0" :inherit company-tooltip)))) ; Prefix + common part in tooltip.
    `(company-tooltip ((,class ,completion-other-candidates))) ; Suffix in tooltip.
    `(company-tooltip-annotation ((,class (:weight normal :foreground "#2415FF")))) ; Annotation.
-
    `(company-preview-common ((,class ,completion-inline)))
-
    `(company-scrollbar-bg ((,class (:background "#EBF4FE"))))
    `(company-scrollbar-fg ((,class (:background "#D1DAE4")))) ; Scrollbar (visible).
 
+   `(company-box-background ((,class (:inherit company-tooltip :background "#EBF4FE"))))
+   `(company-box-candidate ((,class (:foreground "black" :background "#EBF4FE"))))
+   `(company-box-annotation ((,class (:inherit company-tooltip-annotation))))
+   
    `(compare-windows ((,class (:background "#FFFF00"))))
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
    ;; `(completions-first-difference ((,class (:foreground "green" :weight bold))))
