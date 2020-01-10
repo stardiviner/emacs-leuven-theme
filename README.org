@@ -5,7 +5,7 @@
 #+KEYWORDS:  emacs, leuven, custom theme, color theme, light, popular, faces, melpa
 #+LANGUAGE:  en
 
-#+SETUPFILE: ~/src/org-style/setup/bigblow-pirilampo.setup
+#+SETUPFILE: ~/src/org-style/setup/theme-bigblow-pirilampo.setup
 
 #+PROPERTY:  header-args :eval no
 
@@ -184,22 +184,20 @@ beer and as in speech.
 
 * License
 
-Copyright (C) 2003-2017 Free Software Foundation, Inc.
+Emacs-Leuven-Theme \\
+Copyright (C) 2003-2020  Free Software Foundation, Inc.
 
-Author: Fabrice Niessen \\
-Keywords: emacs color theme
-
-This program is free software; you can redistribute it and/or modify it under
+This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation, either version 3 of the License, or (at your option) any later
 version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
 WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
-A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with
-this program. If not, see http://www.gnu.org/licenses/.
+this program.  If not, see http://www.gnu.org/licenses/.
 
 [[http://opensource.org/licenses/GPL-3.0][http://img.shields.io/:license-gpl-blue.svg]]
 [[http://melpa.org/#/leuven-theme][http://melpa.org/packages/leuven-theme-badge.svg]]
