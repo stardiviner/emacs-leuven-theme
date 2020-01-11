@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200110.1019
+;; Version: 20200112.1235
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -88,8 +88,8 @@ more...")
       (code-inline '(:inherit fixed-pitch :foreground "#006400" :background "#E2E9CB"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (completion-inline '(:weight normal :foreground "#C0C0C0" :inherit hl-line)) ; Like Google.
-      (completion-other-candidates '(:weight bold :foreground "black" :background "#EBF4FE"))
-      (completion-selected-candidate '(:weight bold :foreground "white" :background "#0052A4"))
+      (completion-other-candidates '(:weight normal :foreground "black" :background "#EBF4FE" :extend t))
+      (completion-selected-candidate '(:weight normal :foreground "black" :background "#B5D5F5" :extend t))
       (diff-added '(:background "#DDFFDD"))
       (diff-changed '(:foreground "#0000FF" :background "#DDDDFF"))
       (diff-header '(:weight bold :foreground "#800000" :background "#FFFFAF"))
@@ -427,27 +427,30 @@ more...")
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
    `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
 
-   ;; `(ac-selection-face ((,class ,completion-selected-candidate)))
-   `(ac-selection-face ((,class (:weight bold :foreground "white" :background "orange")))) ; TEMP For diff'ing AC from Comp.
+   `(ac-selection-face ((,class ,completion-selected-candidate)))
    `(ac-candidate-face ((,class ,completion-other-candidates)))
    `(ac-completion-face ((,class ,completion-inline)))
    `(ac-candidate-mouse-face ((,class (:inherit highlight))))
    `(popup-scroll-bar-background-face ((,class (:background "#EBF4FE"))))
    `(popup-scroll-bar-foreground-face ((,class (:background "#D1DAE4")))) ; Scrollbar (visible).
 
-   `(company-tooltip-common-selection ((,class (:weight normal :foreground "#F9ECCC" :inherit company-tooltip-selection)))) ; Prefix + common part in tooltip (for selection).
-   `(company-tooltip-selection ((,class ,completion-selected-candidate))) ; Suffix in tooltip (for selection).
-   `(company-tooltip-annotation-selection ((,class (:weight normal :foreground "#F9ECCC")))) ; Annotation (for selection).
-   `(company-tooltip-common ((,class (:weight normal :foreground "#B000B0" :inherit company-tooltip)))) ; Prefix + common part in tooltip.
    `(company-tooltip ((,class ,completion-other-candidates))) ; Suffix in tooltip.
-   `(company-tooltip-annotation ((,class (:weight normal :foreground "#2415FF")))) ; Annotation.
-   `(company-preview-common ((,class ,completion-inline)))
-   `(company-scrollbar-bg ((,class (:background "#EBF4FE"))))
+   `(company-tooltip-selection ((,class ,completion-selected-candidate))) ; Suffix in tooltip (for selection).
+   `(company-tooltip-common ((,class (:inherit company-tooltip :weight normal :foreground "OliveDrab")))) ; Prefix + common part in tooltip.
+   `(company-tooltip-common-selection ((,class (:inherit company-tooltip-selection :weight normal :foreground "forest green")))) ; Prefix + common part in tooltip (for selection).
+   `(company-tooltip-annotation ((,class (:weight normal :background "#DFE8F1")))) ; Annotation.
+   `(company-tooltip-annotation-selection ((,class (:weight normal)))) ; Annotation (for selection).
+   `(company-preview ((,class (:foreground "black" :background "light gray")))) ; Preview
+   `(company-preview-common ((,class ,completion-inline))) ; Preview
+   `(company-preview-search ((,class (:inherit company-preview :foreground "forest green")))) ; Preview
+   `(company-scrollbar-bg ((,class (:background "#EBF4FE")))) ; Scrollbar
    `(company-scrollbar-fg ((,class (:background "#D1DAE4")))) ; Scrollbar (visible).
 
-   `(company-box-background ((,class (:inherit company-tooltip :background "#EBF4FE"))))
-   `(company-box-candidate ((,class (:foreground "black" :background "#EBF4FE"))))
+   `(company-box-background ((,class ,completion-other-candidates)))
+   `(company-box-candidate ((,class ,completion-other-candidates)))
    `(company-box-annotation ((,class (:inherit company-tooltip-annotation))))
+   `(company-box-selection ((,class ,completion-selected-candidate)))
+   `(company-box-scrollbar ((,class (:inherit company-scrollbar-bg))))
    
    `(compare-windows ((,class (:background "#FFFF00"))))
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
