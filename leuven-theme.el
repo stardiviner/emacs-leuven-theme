@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200112.1235
+;; Version: 20200114.1136
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -1078,6 +1078,11 @@ more...")
    ;; `(ztreep-leaf-face ((,class ())))
    ;; `(ztreep-node-face ((,class ())))
 
+   ;; clojure-mode
+   ;; CIDER
+   `(cider-instrumented-face ((,class (:foreground "black" :background "yellow" :box (:color "yellow green") :extend t))))
+   `(cider-debug-prompt-face ((,class (:inherit font-lock-builtin-face))))
+   `(cider-debug-code-overlay-face ((,class (:inherit hi-edebug-x-debug-line))))
    ))
 
 (custom-theme-set-variables 'leuven
