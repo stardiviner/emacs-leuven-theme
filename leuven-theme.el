@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200120.1153
+;; Version: 20200131.1705
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -773,7 +773,7 @@ more...")
    `(org-agenda-date-weekend ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#4E4E4E"))))
    `(org-agenda-diary ((,class (:weight bold :foreground "green4" :background "light blue"))))
    `(org-agenda-dimmed-todo-face ((,class ("#CBCBCB" :background "#ffffff" :strike-through t :extend t))))
-   `(org-agenda-done ((,class (:foreground "#CBCBCB" :background "#ffffff" :strike-through t :extend t))))
+   `(org-agenda-done ((,class (:foreground "#CBCBCB" :background "#ffffff" :extend t))))
    `(org-agenda-filter-category ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-filter-effort ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-filter-regexp ((,class (:weight bold :foreground "orange"))))
