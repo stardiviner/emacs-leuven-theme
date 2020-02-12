@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200131.1705
+;; Version: 20200212.1435
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -763,8 +763,8 @@ more...")
    `(nxml-tag-delimiter-face ((,class (:foreground "blue"))))
    `(nxml-tag-slash-face ((,class (:foreground "blue"))))
    `(org-agenda-block-count ((,class (:weight bold :foreground "#A5A5A5"))))
-   `(org-agenda-calendar-event ((,class (:weight bold :foreground "#3774CC" :background "#E4EBFE"))))
-   `(org-agenda-calendar-sexp ((,class (:foreground "#327ACD" :background "#F3F7FC"))))
+   `(org-agenda-calendar-event ((,class (:weight bold :foreground "#3774CC" :background "#E4EBFE" :extend t))))
+   `(org-agenda-calendar-sexp ((,class (:foreground "#327ACD" :background "#F3F7FC" :extend t))))
    `(org-agenda-clocking ((,class (:foreground "black" :background "#EEC900" :extend t))))
    `(org-agenda-column-dateline ((,class ,column)))
    `(org-agenda-current-time ((,class (:underline t :foreground "#1662AF"))))
@@ -826,7 +826,7 @@ more...")
    `(org-quote ((,class (:slant italic :foreground "dim gray" :background "#FFFFE0"))))
    `(org-scheduled ((,class (:foreground "#333333"))))
    `(org-scheduled-previously ((,class (:foreground "#444444"))))
-   `(org-scheduled-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
+   `(org-scheduled-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC" :extend t))))
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
    `(org-table ((,class (:inherit fixed-pitch :foreground "dark green" :background "#EAFFEA"))))
@@ -837,7 +837,7 @@ more...")
    `(org-upcoming-deadline ((,class (:weight bold :foreground "#222222" :background "palevioletred1"))))
    `(org-verbatim ((,class (:inherit fixed-pitch :foreground "#0066CC" :background "#F7FDFF"))))
    `(org-verse ((,class (:slant italic :foreground "dim gray" :background "#EEEEEE"))))
-   `(org-warning ((,class (:weight bold :foreground "#444444" :background "coral"))))
+   `(org-warning ((,class (:weight bold :foreground "#444444" :background "coral" :extend t))))
    `(outline-1 ((,class ,ol1)))
    `(outline-2 ((,class ,ol2)))
    `(outline-3 ((,class ,ol3)))
