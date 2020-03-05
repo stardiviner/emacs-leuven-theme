@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200212.1435
+;; Version: 20200305.1310
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -782,8 +782,8 @@ more...")
    `(org-agenda-structure ((,class (,@(leuven-scale-font leuven-scale-org-agenda-structure 1.6) :weight bold :foreground "#1F8DD6"))))
    `(org-archived ((,class (:foreground "gray70" :extend t))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
-   `(org-block ((,class (:inherit fixed-pitch :foreground "#000088" :background "#FFFFE0" :extend t))))
-   `(org-block-background ((,class (:inherit fixed-pitch :background "#FFFFE0" :extend t))))
+   `(org-block ((,class (:foreground "#000088" :background "#FFFFE0" :extend t))))
+   `(org-block-background ((,class (:background "#FFFFE0" :extend t))))
    `(org-block-begin-line ((,class (:foreground "#555555" :background "#E2E1D5" :extend t))))
    `(org-block-end-line ((,class (:foreground "#555555" :background "#E2E1D5" :extend t))))
    `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#123555" :background "#A3A3A3"))))
@@ -829,7 +829,7 @@ more...")
    `(org-scheduled-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC" :extend t))))
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
-   `(org-table ((,class (:inherit fixed-pitch :foreground "dark green" :background "#EAFFEA"))))
+   `(org-table ((,class (:foreground "dark green" :background "#EAFFEA"))))
    `(org-tag ((,class (:weight normal :slant italic :foreground "#9A9FA4" :background "white"))))
    `(org-target ((,class (:foreground "#4682B4" :weight bold))))
    `(org-time-grid ((,class (:foreground "#CFCFCF"))))
