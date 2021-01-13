@@ -4,7 +4,7 @@
 
 ;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
 ;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20200306.1717
+;; Version: 20210113.1103
 ;; Keywords: color theme
 
 ;; This file is part of GNU Emacs.
@@ -834,10 +834,10 @@ more...")
    `(org-target ((,class (:foreground "#4682B4" :weight bold))))
    `(org-time-grid ((,class (:foreground "#CFCFCF"))))
    `(org-todo ((,class (:weight bold :box (:line-width 1 :color "#D8ABA7") :foreground "#D8ABA7" :background "#FFE6E4"))))
-   `(org-upcoming-deadline ((,class (:weight bold :foreground "#222222" :background "palevioletred1"))))
    `(org-verbatim ((,class (:inherit fixed-pitch :foreground "#0066CC" :background "#F7FDFF"))))
    `(org-verse ((,class (:slant italic :foreground "dim gray" :background "#EEEEEE"))))
-   `(org-warning ((,class (:weight bold :foreground "#444444" :background "coral" :extend t))))
+   `(org-upcoming-deadline ((,class (:weight normal :foreground "#222222" :background "#ffbfde" :extend t))))
+   `(org-warning ((,class (:weight bold :foreground "#444444" :background "#ffd3d3" :extend t))))
    `(outline-1 ((,class ,ol1)))
    `(outline-2 ((,class ,ol2)))
    `(outline-3 ((,class ,ol3)))
